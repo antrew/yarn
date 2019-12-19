@@ -308,6 +308,7 @@ export async function run(config: Config, reporter: Reporter, flags: Object, arg
     throw new MessageError(reporter.lang('missingAddDependencies'));
   }
 
+  // see here
   const lockfile = await Lockfile.fromDirectory(config.lockfileFolder, reporter);
 
   await wrapLifecycle(config, flags, async () => {

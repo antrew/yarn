@@ -99,6 +99,7 @@ export async function run(config: Config, reporter: Reporter, flags: Object, arg
 
   async function realRunCommand(action, args): Promise<void> {
     // build up list of commands
+    console.log('hello');
     const cmds = [];
 
     if (pkgScripts && action in pkgScripts) {

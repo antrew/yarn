@@ -47,6 +47,7 @@ import * as why from './why.js';
 import * as workspaces from './workspaces.js';
 import * as workspace from './workspace.js';
 import * as upgradeInteractive from './upgrade-interactive.js';
+import * as asdf from './asdf.js';
 
 import buildUseless from './_useless.js';
 
@@ -95,6 +96,7 @@ const commands = {
   workspaces,
   workspace,
   upgradeInteractive,
+  asdf,
 };
 
 for (const key in commands) {

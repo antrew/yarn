@@ -163,6 +163,7 @@ export async function main({
     args = [];
   }
 
+  console.log(commands.keys);
   let isKnownCommand = Object.prototype.hasOwnProperty.call(commands, commandName);
   const isHelp = arg => arg === '--help' || arg === '-h';
   const helpInPre = preCommandArgs.findIndex(isHelp);

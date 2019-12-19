@@ -931,7 +931,7 @@ export class Install {
   /**
    * Save updated integrity and lockfiles.
    */
-
+// TODO
   async saveLockfileAndIntegrity(patterns: Array<string>, workspaceLayout: ?WorkspaceLayout): Promise<void> {
     const resolvedPatterns: {[packagePattern: string]: Manifest} = {};
     Object.keys(this.resolver.patterns).forEach(pattern => {

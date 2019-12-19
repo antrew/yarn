@@ -1,0 +1,8 @@
+----
+yarn upgrade-transitive wrappy
+----
+
+It should do:
+
+. remove entries from yarn.lock
+. run `yarn install`
